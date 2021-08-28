@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 import { Dropdown, Tabs, Tab } from 'react-bootstrap';
@@ -23,6 +23,18 @@ import {
 
 
 export const Pools =()=> {
+  const [All_History_btn,  set_All_History_btn ] = useState(["rgb(122, 110, 170)", "rgb(238, 234, 244)"]);
+  const [Your_History_btn, set_Your_History_btn] = useState(["transparent", "rgb(122, 110, 170)"]);
+  function All_History() {
+    set_All_History_btn(["rgb(122, 110, 170)", "rgb(238, 234, 244)"])
+    set_Your_History_btn(["transparent", "rgb(122, 110, 170)"]);
+  }
+  function Your_History() {
+    set_All_History_btn(["transparent", "rgb(122, 110, 170)"]);
+    set_Your_History_btn(["rgb(122, 110, 170)", "rgb(238, 234, 244)"])
+    
+  }
+
   const [state, setState] = React.useState({
     checkedA: true,
     checkedB: true,
@@ -86,11 +98,10 @@ export const Pools =()=> {
                   <span className="ml-1 stack-text">Staked Only</span>
                 </div>
                 <div className=" liveFinishDiv">
-                  <Link to="" className="liveB">Live</Link>
+                  <Link to="#" className="liveB" onClick={()=> All_History()}   style={{backgroundColor: All_History_btn[0], color: All_History_btn[1]}}>Live</Link>
                   <span>
-                    <Link to="" className="finishedB">Finished</Link>
+                    <Link to="#" className="finishedB" onClick={()=> Your_History()} style={{backgroundColor: Your_History_btn[0], color: Your_History_btn[1]}} >Finished</Link>
                   </span>
-
                 </div>
               </div>
               <div className="filter2ndDiv">
