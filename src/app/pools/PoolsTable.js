@@ -101,7 +101,7 @@ const PoolTable=(props)=>{
 										data-bs-target="#collapseExample" aria-expanded="false"
 										aria-controls="collapseExample" 
 										>
-										Details
+										<span className="d-none-576"> Details</span>
 										<svg viewBox="0 0 24 24" color="primary" width="20px"
 											xmlns="http://www.w3.org/2000/svg" className="sc-bdnxRM flwtrA">
 											<path fill="rgb(31, 199, 212)"
@@ -164,7 +164,7 @@ const PoolTable=(props)=>{
             <TableRow className="" style={{ background: "white" }}>
                 <TableCell colSpan="6" component="th" className="py-3">
                     <a href="#" className="d-flex ai-center jc-center">
-                        <span className="detail mr-1 d-none-576"> To Top</span>
+                        <span className="detail mr-1 "> To Top</span>
                         <span><img src={arrowDown} alt="detail" width="11px" className="arrowUp" /></span>
                     </a>
                 </TableCell>
