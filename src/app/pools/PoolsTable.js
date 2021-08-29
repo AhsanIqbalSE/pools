@@ -26,21 +26,19 @@ const PoolTable=(props)=>{
   const [set,setval]=useState();
   
   useEffect(()=>{
-    function toggleRow() {
-
-      var button1 = document.querySelector('.detailButton');
-      var box = document.querySelector('.rowCollapse');
-    console.log(button1);
-    console.log(box);
-      button1.addEventListener('click', function() {
-        
-        box.classList.toggle('show');
+ 
     
-      });
-      
-    };
-    toggleRow()
   })
+  function toggleRow(index) {
+
+    // var button1 = document.querySelector('.detailButton');
+    var box = document.querySelectorAll('.rowCollapse')[index];
+    // button1.addEventListener('click', function() {
+      box.classList.toggle('show');  
+    // });
+    
+  };
+  
 
 
     return(
@@ -99,7 +97,7 @@ const PoolTable=(props)=>{
                 
               </TableCell>
               <TableCell component="th" scope="row" className="" >
-                <button className="btn btn-primary detailButton" type="button" data-bs-toggle="collapse"
+                <button className="btn btn-primary detailButton" onClick={()=>toggleRow(index)} type="button" data-bs-toggle="collapse"
 										data-bs-target="#collapseExample" aria-expanded="false"
 										aria-controls="collapseExample" 
 										>
