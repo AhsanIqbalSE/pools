@@ -1,7 +1,6 @@
 {
   "name": "connect-plus-react",
   "version": "1.1.0",
-  "homepage": "https://bootstrapdash.com/demo/connect-plus-react-free/template/demo_1/preview",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
