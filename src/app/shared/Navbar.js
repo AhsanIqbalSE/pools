@@ -16,7 +16,7 @@ class Navbar extends Component {
          <Link className="navbar-brand brand-logo-mini" to="/"><img src={require('../../assets/images/logo-small.JPG')} alt="logo" /></Link>
         </div>
         <div className="navbar-menu-wrapper d-flex align-items-stretch">
-          <button className="navbar-toggler navbar-toggler align-self-center" type="button" onClick={ () => document.body.classList.toggle('sidebar-icon-only') }>
+          <button className="navbar-toggler navbar-toggler align-self-center navbar-toggler-large" type="button" onClick={ () => document.body.classList.toggle('sidebar-icon-only') }>
             <span className="mdi mdi-menu"></span>
           </button>
           <div className="navbar-nav navbar-nav-right">

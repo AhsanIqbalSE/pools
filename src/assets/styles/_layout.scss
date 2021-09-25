@@ -17,7 +17,7 @@
         width: $sidebar-width-mini;
       }
       .navbar-menu-wrapper {
-        width: calc(100% - #{$sidebar-width-mini});
+        // width: calc(100% - #{$sidebar-width-mini});
       }
     }
     .sidebar {
@@ -121,16 +121,16 @@
   @media (min-width: 992px) {
     .navbar {
       .navbar-brand-wrapper {
-        width: $sidebar-width-icon;
+        // width: $sidebar-width-icon;
         .brand-logo {
-          display: none;
+          // display: none;
         }
         .brand-logo-mini {
-          display: inline-block;
+          // display: inline-block;
         }
       }
       .navbar-menu-wrapper {
-        width: calc(100% - #{$sidebar-width-icon});
+        // width: calc(100% - #{$sidebar-width-icon});
       }
     }
     .sidebar {

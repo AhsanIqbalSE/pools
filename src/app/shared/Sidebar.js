@@ -65,7 +65,7 @@ class Sidebar extends Component {
               <span className="menu-title"><Trans>Pools</Trans></span>
             </Link>
           </li>
-          <li className={ this.isPathActive('/basic-ui') ? 'nav-item active' : 'nav-item' }>
+          {/* <li className={ this.isPathActive('/basic-ui') ? 'nav-item active' : 'nav-item' }>
             <div className={ this.state.basicUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('basicUiMenuOpen') } data-toggle="collapse">
               <span className="icon-bg"><img src={trade} width="24px"></img></span>
               <span className="menu-title"><Trans>Trade</Trans></span>
@@ -78,7 +78,7 @@ class Sidebar extends Component {
                 <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/typography') ? 'nav-link active' : 'nav-link' } to="/basic-ui/typography"><Trans>Typography</Trans></Link></li>
               </ul>
             </Collapse>
-          </li>
+          </li> */}
    </ul>
       </nav>
     );

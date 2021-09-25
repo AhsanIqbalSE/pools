@@ -35,7 +35,7 @@
     transition-delay: 0s, 0s;
     height: 32px;
     padding: 0px 16px;
-    background-color: rgb(31, 199, 212);
+    background-color: rgb(1, 213, 152);
     color: white;
   }
   .navbar-brand-wrapper {
@@ -432,3 +432,7 @@
     }
   }
 } 
+.navbar-toggler-large{
+  position: absolute;
+    left: 15px;
+}
