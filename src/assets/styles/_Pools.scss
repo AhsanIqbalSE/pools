@@ -792,3 +792,10 @@
     }
 
 }
+// stack only swtch color
+.MuiSwitch-colorSecondary.Mui-checked{
+    color: #01d598 !important;
+}
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track{
+    background-color: #01d598 !important;
+}
